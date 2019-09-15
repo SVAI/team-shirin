@@ -22,7 +22,7 @@ A finding that immediately jumped out was the high proportion of "most disturbed
 
 The full heatmap of the "most disturbed" genes (in the copper? column, X indicates a gene not in the Drug Target Explorer, + indicates a gene in the DTE with a known copper association, and - indicates a gene in the DTE with no known copper association).
 
-![heatmap](https://github.com/svai/team-shirin/shirinRNA.png)
+![heatmap](https://github.com/SVAI/team-shirin/blob/master/shirinRNA.png)
 
 
 ## Conclusion/Discussion: 
