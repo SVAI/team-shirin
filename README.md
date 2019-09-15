@@ -18,7 +18,11 @@ We took the RNASeq data from CNF samples (33 specimens, 11 individuals) and the 
 
 
 ## Results
-A finding that immediately jumped out was the high proportion of "suspect" genes with known interactions with copper. Of the  genes in the suspect set that appeared in the DTE drug target associations database (v2), 23 of 58 (40%) had a known association with copper; of the total of target genes appearing in the database, only 144 of 3735 (4%) had a known association with copper.
+A finding that immediately jumped out was the high proportion of "most disturbed" genes with known interactions with copper. Of the  genes in the suspect set that appeared in the DTE drug target associations database (v2), 23 of 58 (40%) had a known association with copper; of the total of target genes appearing in the database, only 144 of 3735 (4%) had a known association with copper.
+
+The full heatmap of the "most disturbed" genes (in the copper? column, X indicates a gene not in the Drug Target Explorer, + indicates a gene in the DTE with a known copper association, and - indicates a gene in the DTE with no known copper association).
+
+![heatmap](https://github.com/SVAI/team-shirin/blob/master/shirinRNA.png)
 
 
 ## Conclusion/Discussion: 
@@ -28,7 +32,8 @@ Perhaps this suggests a direction for drug development that could work on a numb
 - "it has been demonstrated that copper is required for angiogenic process"
 - "lowering copper level moderately with a drug such as TM produces strong antiangiogenesis and potent anticancer effects in several rodent models"
 - "limiting the biological availability of copper by penicillamine or TM administration slows tumor growth"
-Copper chelators such as penicillamine and TM (tetrathiomolybdate) are used in 
+
+Copper chelators such as penicillamine and TM (tetrathiomolybdate) are used in treatment of conditions including Wilson's disease, and have been investigated for treatment of cancer.
 
 Sharad Verma mentioned the possible importance of transdermal delivery for CNF drugs. Interestingly, it appears possible to administer penicillamine transdermally using ultrasound-mediated delivery (sonophoresis) [PHLB].
 
@@ -46,15 +51,7 @@ Sharad Verma mentioned the possible importance of transdermal delivery for CNF d
 ## Reproduction
 Run the shirinRNASeq notebook.
 
-### Docker
-
-*The Docker image contains <R/jupyter> notebooks of all analyses and the dependencies to run them. *Be sure to note if you need any special credentials to access data for these analyses, **don't package restricted data** in your containers!*
-
-Instructions for running the following notebooks: *be sure to adjust these instructions as necessary! check out https://github.com/Sage-Bionetworks/nf-hackathon-2019 for example containers and instructions*
-
-1. `docker pull <your dockerhub repo>/<this container>` command to pull the image from the DockerHub
-2. `docker run <your dockerhub repo>/<this container>` Run the docker image from the master shell script
-
-### Important Resources *: primary data, github repository, Synapse project, dockerfile link etc.*
+### Important Resources
+github: https://github.com/svai/team-shirin
 
 
