@@ -1,6 +1,13 @@
 # team-shirin
 Database-focused drug discovery and gene therapy for cutaneous neurofibroma
 
+# Abstract
+
+We have two projects
+
+* Mining RNASeq for new CNF drug targets
+* Mining COSMIC for histologies primarily associated with NF1 and associating mutation sites with those histologies
+
 # Project 1: Mining RNASeq for new CNF drug targets
 
 ## Abstract
@@ -51,6 +58,34 @@ Sharad Verma mentioned the possible importance of transdermal delivery for CNF d
 
 ## Reproduction
 Run the shirinRNASeq notebook.
+
+# Project 2: Mining COSMIC for mutation sets of histologies associated with NF1
+
+## Abstract
+We find histologies associated with tissues containing NF1 somatic mutations in the COSMIC database. We find all other gene somatic mutations for those histologies. We assess the main predisposing gene to be the gene with the most mutation-sample pairs associated with the histology. For the NF1 mutation sites associated with each histology, we give FATHM score and PUBMED ID.
+
+NOTE: All of the samples are taken from people with somatic mutations leading to cancer, so there is selection bias in the samples to that extent.
+
+## Introduction
+We are looking for how different final protein products of NF1, arising from different mutations, contribute to development of specific histologies noted in the Sanger Institute COSMIC cancer somatic mutation database.
+
+
+## Methods
+We use Python to search records in the downloaded TSV file.
+
+## Results
+There are 21 histologies associated with tissues containing NF1 somatic mutations in the COSMIC database. There are 21.  We find that 4 histologies are primarily associated with NF1. We find that the mutation sites in NF1 observed to the 4 histologies each are associated with only a single histology. For MPNST, 3 genes are equally scored and Neurofibroma has a very high score for NF1. We find that each histology is associated with multiple mutation sites. We find that each mutation is associated with only one histology.  For the NF1 mutation sites associated with each histology, we give FATHM score and PUBMED ID.
+
+## Conclusion/Discussion: 
+The metric we propose seems good at assessing which genes are significant for a histology.  It is remarkable that each mutation is associated with only one histology.  It is interesting that multiple dispersed mutation sites can support development of a single histology.  We need to know more about similarity of proteins realized from replication based on different mutation sites which are associated with same histology, to find common binding sites in the signalling chain for those proteins, and to understand why proteins produced from mutations associated with other histologies differ on those binding sites.
+
+## Future work:
+- Understand how different mutation sites associate with the same histology produce proteins which have similar effects, by comparing the protein products of each mutation
+- Automating the process of finding, from available online databases and APIs, the variation classification, affected pathways and ClinVar clinical significance score of each mutation
+
+## Reproduction
+Download a copy of the COSMIC gene expression TSV file.
+Run the COSMIC NF1 Histologies notebook.
 
 ### Important Resources
 github: https://github.com/svai/team-shirin
