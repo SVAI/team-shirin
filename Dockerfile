@@ -14,4 +14,5 @@ RUN mkdir /home/jovyan/work/output
 
 COPY 0-setup.ipynb /home/jovyan/work/0-setup.ipynb
 COPY shirinRNASeq.ipynb /home/jovyan/work/shirinRNASeq.ipynb
+COPY shirinRNA.png /home/jovyan/work/shirinRNA.png
 COPY drug_target_associations_v2.txt /home/jovyan/work/drug_target_associations_v2.txt
