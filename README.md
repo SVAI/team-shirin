@@ -1,6 +1,8 @@
 # team-shirin
 Database-focused drug discovery and gene therapy for cutaneous neurofibroma
 
+Isaac Dimitrovsky and Lars Warren Ericson, 15 September 2019
+
 # Abstract
 
 We have two projects
