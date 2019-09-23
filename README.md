@@ -1,5 +1,5 @@
 # team-shirin
-Database-focused drug discovery and gene therapy for cutaneous neurofibroma
+Datab mining for CNF drug targets and mutation-histology correlations in NF1
 
 Isaac Dimitrovsky and Lars Warren Ericson, 15 September 2019
 
